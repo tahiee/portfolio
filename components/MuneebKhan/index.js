@@ -5,13 +5,13 @@ import B from "./muneebkhanSVGs/B";
 import E1 from "./muneebkhanSVGs/E1";
 import E2 from "./muneebkhanSVGs/E2";
 import H from "./muneebkhanSVGs/H";
-// import K1 from "./muneebkhanSVGs/K1";
-// import K2 from "./muneebkhanSVGs/K2";
+import K1 from "./muneebkhanSVGs/K1";
+import K2 from "./muneebkhanSVGs/K2";
 import K3 from "./muneebkhanSVGs/K3";
-import M from "./muneebkhanSVGs/M";
+import T from "./muneebkhanSVGs/T";
 import N from "./muneebkhanSVGs/N";
 import N2 from "./muneebkhanSVGs/N2";
-import U from "./muneebkhanSVGs/U";
+import AA from "./muneebkhanSVGs/AA";
 
 const SvgWrapper = ({ SVG, className, ...rest }) => (
   <div
@@ -45,12 +45,12 @@ export default function MuneebKhan({ }) {
   return (
     <div ref={ref} className={`mk-muneeb-khan ${mount ? 'mk-muneeb-khan-visible' : ''}`}>
       <SvgWrapper
-        className="mk_svg_M"
-        SVG={M}
+        className="mk_svg_T"
+        SVG={T}
       />
       <SvgWrapper
-        className="mk_svg_U"
-        SVG={U}
+        className="mk_svg_AA"
+        SVG={AA}
       />
       <SvgWrapper
         className="mk_svg_N"
@@ -68,14 +68,14 @@ export default function MuneebKhan({ }) {
         className="mk_svg_B"
         SVG={B}
       />
-        {/* <SvgWrapper
+        <SvgWrapper
           className="mk_svg_K1"
           SVG={K1}
-        /> */}
-      {/* <SvgWrapper
+        />
+      <SvgWrapper
         className="mk_svg_K2"
         SVG={K2}
-      /> */}
+      />
       <SvgWrapper
         className="mk_svg_K3"
         SVG={K3}

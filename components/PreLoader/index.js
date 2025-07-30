@@ -8,7 +8,7 @@ const PreLoader = () => {
             const root = document.documentElement;
             root.style.setProperty('--scrollBarWidth', '8px');
             handleLoader(false)
-        }, 3000)
+        }, 300000)
     }, [])
 
     return (
