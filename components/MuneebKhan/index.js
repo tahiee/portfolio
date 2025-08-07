@@ -48,10 +48,10 @@ export default function MuneebKhan({ }) {
         className="mk_svg_T"
         SVG={T}
       />
-      <SvgWrapper
+      {/* <SvgWrapper
         className="mk_svg_AA"
         SVG={AA}
-      />
+      /> */}
       <SvgWrapper
         className="mk_svg_N"
         SVG={N}

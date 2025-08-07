@@ -3,8 +3,8 @@ import React from 'react';
 const T = (props) => (
   <svg
     {...props}
-    width="0.5em"
-    height="0.5em"
+    width="0.4em"
+    height="0.4em"
     viewBox="0 0 107.001 77.8"
     xmlns="http://www.w3.org/2000/svg"
     fill="#FFD700"
