@@ -2,15 +2,15 @@ const mySelf = {
     heading: 'My Portfolio',
     paragraphs: [
         `
-        Hello! My name is Muneeb Khan, I like creating new things for internet. From a younger age, I have been interested in programming, as a kid most of my time I've spent in inspect element playing with colors and codes generating loops for sending infinite messages, cracking locked screen overflows and many more. so finally at the age of 16 I decided to convert this passion into career.`,
+        Hello! My name is Tahir Khan, I like creating new things for internet. My programming journey began during the COVID-19 pandemic. The lockdown gave me the perfect opportunity to dive deep into coding, and it completely transformed my perspective on technology.`,
         `
         It is a way to become more crafty with my ideas and explore the endless possibilities in the world of programming.`,
         `
-        Besides, Programming I'm a passionate photographer and a traveller.
-        A First Pakistani who actually covered most of the 360 google street view of city Karachi with heighest GSV contribution in all over Pakistan it helped more than 42 Million people till now.`,
+        During those challenging times, I was inspired to build robust websites that could help people stay connected and productive. This experience taught me the importance of creating reliable, scalable web solutions that can make a real difference in people's lives.`,
         `
-        Coming back to Programming over the time I've delivered projects to many happy cients over globe and it gave me experience for working with many different people of different culture.
-        From local software house to Fiverr, Fiverr to Upwork and gradually towards international companies.`,
+        Besides, Programming I'm a passionate gamer and a traveller.`,
+        `
+        Coming back to Programming, I did 2 months internship at Contour Software and then started my MERN stack journey at DotClick.`,
         `
         I am extremely observant when it comes to the breakdown of certain things. As being a crafty person I mostly endup solving too complex issues in less time.
         `,
@@ -31,9 +31,6 @@ const mySelf = {
     ],
     techList2: [
         'Web3.js',
-        'Solidity',
-        'Ionic',
-        'Cordova',
         'PWA/SPA',
         'AWS',
     ],

@@ -1,25 +1,43 @@
 import React, { useEffect, useState } from 'react'
-import SmileLoader from '../SmileLoader';
 
 const PreLoader = () => {
     const [loader, handleLoader] = useState(true);
     
-    const handleComplete = () => {
-        const root = document.documentElement;
-        root.style.setProperty('--scrollBarWidth', '8px');
-        handleLoader(false);
-    };
+    useEffect(() => {
+        // Auto-hide loader after 5 seconds
+        const timer = setTimeout(() => {
+            handleLoader(false);
+        }, 5000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (!loader) return null;
 
     return (
-        <div className={`mk-pre-loader ${loader ? 'mk-pre-loader-enabled' : 'mk-pre-loader-disabled'}`}>
-            <SmileLoader 
-                onComplete={handleComplete}
-                duration={10000}
-            />
+        <div className="preloader-container">
+            <div className="body">
+                <span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div className="base">
+                    <span>
+                        <div className="face"></div>
+                    </span>
+                </div>
+            </div>
+            <div className="longfazers">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>SUPER FULL STACK</h1>
         </div>
     )
 }
-
-PreLoader.propTypes = {}
 
 export default PreLoader
