@@ -1,9 +1,9 @@
-@import './theme.scss';
+﻿@import './theme.scss';
 
-.mk-myself {
+.tk-myself {
     width: 100vw;
 
-    .mk-myself-settings-icon {
+    .tk-myself-settings-icon {
         svg {
             width: 30vw;
             height: 100%;
@@ -17,7 +17,7 @@
         margin-top: 500px;
     }
 
-    .mk-myself-container {
+    .tk-myself-container {
         max-width: 900px;
         margin: auto;
         min-height: 100vh;
@@ -26,21 +26,21 @@
         justify-content: center;
         padding: 100px 0 100px 0;
 
-        .mk-myself-paragraph {
+        .tk-myself-paragraph {
             margin: 0px 0px 15px;
             font-size: 16px;
             line-height: 24px;
             color: $themeColor3;
         }
 
-        .mk-myself-skill {
+        .tk-myself-skill {
             color: $themeColor4;
             font-size: 12px;
             margin-bottom: 10px;
             line-height: 24px;
 
             &::before {
-                content: "▹";
+                content: "\25B9";
                 color: $themeColor3;
                 font-size: 14px;
                 line-height: 12px;
@@ -48,16 +48,16 @@
             }
         }
 
-        .mk-myself-profile-wrapper {}
+        .tk-myself-profile-wrapper {}
 
-        .mk-myself-profile-parent {
+        .tk-myself-profile-parent {
             max-width: 300px;
             max-height: 300px;
             width: 100%;
             height: 100%;
         }
 
-        .mk-myself-profile {
+        .tk-myself-profile {
             max-width: 300px;
             width: 100%;
 
@@ -66,11 +66,11 @@
 
         @media only screen and (max-width: 800px) {
 
-            .mk-myself-profile-parent {
+            .tk-myself-profile-parent {
                 max-width: 250px;
             }
 
-            .mk-myself-profile {
+            .tk-myself-profile {
                 max-width: 250px;
             }
         }

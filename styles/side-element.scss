@@ -1,18 +1,18 @@
-@import './theme.scss';
+﻿@import './theme.scss';
 
-.mk-side-elements {
+.tk-side-elements {
 
     @media only screen and (max-width: 800px) {
         display: none;
 
     }
 
-    .mk-side-elements-container {
+    .tk-side-elements-container {
         position: fixed;
         bottom: 0;
         z-index: 1;
 
-        .mk-side-elements-item {
+        .tk-side-elements-item {
             margin: 20px 0;
             cursor: pointer;
 
@@ -20,7 +20,7 @@
                 stroke: $themeColor3;
             }
 
-            .mk-side-elements-text {
+            .tk-side-elements-text {
                 color: $themeColor3;
                 letter-spacing: 2px;
                 writing-mode: vertical-rl;
@@ -31,13 +31,13 @@
                     stroke: $themeColor4;
                 }
 
-                .mk-side-elements-text {
+                .tk-side-elements-text {
                     color: $themeColor4;
                 }
             }
         }
 
-        .mk-side-elements-line {
+        .tk-side-elements-line {
             display: block;
             width: 1px;
             height: 90px;
@@ -46,11 +46,11 @@
         }
     }
 
-    .mk-side-elements-left {
+    .tk-side-elements-left {
         left: 2.5%;
     }
 
-    .mk-side-elements-right {
+    .tk-side-elements-right {
         right: 2.5%;
     }
 }

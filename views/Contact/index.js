@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+﻿import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useParallax } from 'react-scroll-parallax';
 import Star from '../../components/SVGs/Star';
@@ -36,27 +36,27 @@ const Contact = ({ data: {
         translateX: [-50, 0]
     });
     return (
-        <div className='mk-contact'>
+        <div className='tk-contact'>
             <div
                 ref={ref}
-                className='mk-contact-zebra-img'
+                className='tk-contact-zebra-img'
                 style={{
                     backgroundImage: `url(${'/assets/arrow-sample.svg'})`,
                 }}>
 
             </div>
-            <div className='mk-contact-box'>
+            <div className='tk-contact-box'>
                 <div className='container flex-center flex-column'>
-                    <div className='mk-contact-box-width'>
-                        <div className='mk-contact-label'>{label}</div>
-                        <div className='mk-contact-title'>{heading} </div>
-                        <div className='mk-contact-text'>{description}</div>
-                        <div className='mk-contact-button'>
-                            <button onClick={button?.onClick} className='mk-button'>
+                    <div className='tk-contact-box-width'>
+                        <div className='tk-contact-label'>{label}</div>
+                        <div className='tk-contact-title'>{heading} </div>
+                        <div className='tk-contact-text'>{description}</div>
+                        <div className='tk-contact-button'>
+                            <button onClick={button?.onClick} className='tk-button'>
                                 {button?.label}
                             </button>
                         </div>
-                        <div onClick={handleBuiltByClick} className='mk-contact-git-section'>
+                        <div onClick={handleBuiltByClick} className='tk-contact-git-section'>
                             <div>{designAndBuiltBy}</div>
                             {!!(githubInfo.stars && githubInfo.forks) && (
                                 <div>

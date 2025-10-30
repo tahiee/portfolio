@@ -19,7 +19,7 @@ const HamburgerBody = ({ menus, handleItemSelect }) => (
             width: cbHeight((menus || []).length),
             height: cbHeight((menus || []).length),
         }}
-        className='mk-hamburger'>
+        className='tk-hamburger'>
         <div className="flex-center">
             {(menus || []).map((menu, i) => {
                 return (
@@ -34,10 +34,10 @@ const HamburgerBody = ({ menus, handleItemSelect }) => (
                                 zIndex: menus.length - i,
                             }}
                             onClick={() => handleItemSelect(menu, i)}
-                            className='mk-hamburger-item'
+                            className='tk-hamburger-item'
                         >
                             <div
-                                className='mk-hamburger-item-bg'
+                                className='tk-hamburger-item-bg'
                                 style={{
                                     opacity: getMenuItemOpacity({ menus, i })
                                 }}
@@ -61,27 +61,27 @@ const Header = ({ data: { menus, handleItemSelect, handleIconClick, rightBtn, lo
     const onChangeMenu = () => handleVisibleMenu(!menuVisibled);
 
     return (
-        <header className='mk-header'>
-            <div className='mk-header-container'>
+        <header className='tk-header'>
+            <div className='tk-header-container'>
                 <div>
                     {!logo?.src ? (
                         <MK onClick={handleIconClick} width={45} height={45} />
                     ) : (
-                        <div onClick={handleIconClick} className='mk-logo-bg'>
-                            <Image width={60} height={60} src={'https://i.ibb.co/02Y0Y0Y/photo-logo.png'} alt={logo.alt} />
+                        <div onClick={handleIconClick} className='tk-logo-bg'>
+                            <Image width={60} height={60} src={'./assets/photo-logo.png'} alt={logo.alt} />
                         </div>
                     )}
                 </div>
                 <div className='d-flex'>
                     {rightBtn && (
                         <div>
-                            <button onClick={rightBtn.onClick} className='mk-button-md mx-3 mx-lg-5'>
+                            <button onClick={rightBtn.onClick} className='tk-button-md mx-3 mx-lg-5'>
                                 {rightBtn.label}
                             </button>
                         </div>
                     )}
-                    <div className={`mk-header-menu ${menuVisibled && 'mk-header-menu-visible'}`}>
-                        <Hamburger className="mk-hamburger-icon" onClick={onChangeMenu} width={30} height={30} />
+                    <div className={`tk-header-menu ${menuVisibled && 'tk-header-menu-visible'}`}>
+                        <Hamburger className="tk-hamburger-icon" onClick={onChangeMenu} width={30} height={30} />
                         <HamburgerBody menus={menus} handleItemSelect={handleItemSelect} />
                     </div>
                 </div>

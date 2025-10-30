@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import PropTypes from 'prop-types'
 import HoverImage from '../../components/HoverImage'
 import ViewsTitle from '../../components/ViewsTitle'
@@ -6,7 +6,7 @@ import Helm from '../../components/SVGs/Helm'
 import { useParallax } from 'react-scroll-parallax'
 
 const Paragraph = ({ text }) => (
-    <div data-aos="zoom-in-left" className='mk-myself-paragraph'>
+    <div data-aos="zoom-in-left" className='tk-myself-paragraph'>
         {text}
     </div>
 )
@@ -14,7 +14,7 @@ const Paragraph = ({ text }) => (
 const List = ({ items }) => (
     <div className='col'>
         {(items || []).map(item => (
-            <div data-aos="zoom-in-left" className='mk-myself-skill' key={item}>
+            <div data-aos="zoom-in-left" className='tk-myself-skill' key={item}>
                 {item}
             </div>
         ))}
@@ -22,7 +22,7 @@ const List = ({ items }) => (
 )
 
 const ListParent = ({ list1, list2 }) => (
-    <div className='mk-myself-list-parent row'>
+    <div className='tk-myself-list-parent row'>
         <List items={list1} />
         <List items={list2} />
     </div>
@@ -41,16 +41,16 @@ const MySelf = ({ data: {
         rotate: [0, (360 * 1)],
     });
     return (
-        <div className='mk-myself'>
+        <div className='tk-myself'>
             <div
                 ref={ref}
-                className='mk-myself-settings-icon'>
+                className='tk-myself-settings-icon'>
                 <Helm />
             </div>
             <div className='container'>
                 <div
                     data-aos="fade-down-left"
-                    className='mk-myself-container'>
+                    className='tk-myself-container'>
                     <ViewsTitle
                         text={heading}
                     />
@@ -72,12 +72,12 @@ const MySelf = ({ data: {
                         <div className='col-12 col-md-4 mt-5 mt-md-0'>
                             <div
                                 data-aos="zoom-in-right"
-                                className='mk-myself-profile-wrapper d-flex justify-content-center'>
+                                className='tk-myself-profile-wrapper d-flex justify-content-center'>
                                 <HoverImage
                                     showFilter
                                     showBorder
-                                    imageClassName='mk-myself-profile'
-                                    parentClassName='mk-myself-profile-parent'
+                                    imageClassName='tk-myself-profile'
+                                    parentClassName='tk-myself-profile-parent'
                                     src={image}
                                 // layout="fill"
                                 />

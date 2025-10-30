@@ -1,10 +1,10 @@
-@import './theme.scss';
+﻿@import './theme.scss';
 
-// $mk-muneeb-khan-svg-transition: cubic-bezier(0.84, -0.35, 0.26, 1.08);
-$mk-muneeb-khan-svg-transition: cubic-bezier(0.82, 0.01, 1, 0.11);
-// $mk-muneeb-khan-svg-transition: cubic-bezier(1,-0.01, 0, 1);
+// $tk-muneeb-khan-svg-transition: cubic-bezier(0.84, -0.35, 0.26, 1.08);
+$tk-muneeb-khan-svg-transition: cubic-bezier(0.82, 0.01, 1, 0.11);
+// $tk-muneeb-khan-svg-transition: cubic-bezier(1,-0.01, 0, 1);
 
-.mk-muneeb-khan {
+.tk-muneeb-khan {
     // background-color: orange;
     position: relative;
     width: 100%;
@@ -17,7 +17,7 @@ $mk-muneeb-khan-svg-transition: cubic-bezier(0.82, 0.01, 1, 0.11);
     transition: all 1000ms linear;
     // transform: scale(0);
 
-    .mk-muneeb-khan-parallax {
+    .tk-muneeb-khan-parallax {
         // display: inline;
         transform: scale(0);
         // width: 100vw;
@@ -33,53 +33,53 @@ $mk-muneeb-khan-svg-transition: cubic-bezier(0.82, 0.01, 1, 0.11);
 
 .mk_svg_T {
     transform-origin: center top;
-    transition: all 100ms $mk-muneeb-khan-svg-transition;
+    transition: all 100ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_AA {
     transform-origin: center bottom;
-    transition: all 200ms $mk-muneeb-khan-svg-transition;
+    transition: all 200ms $tk-muneeb-khan-svg-transition;
     transform: scale(0.02) translateY(-300%);
 }
 .mk_svg_N {
     transform-origin: center top;
-    transition: all 300ms $mk-muneeb-khan-svg-transition;
+    transition: all 300ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_E1 {
     transform-origin: right top;
-    transition: all 400ms $mk-muneeb-khan-svg-transition;
+    transition: all 400ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_E2 {
     transform-origin: right top;
-    transition: all 500ms $mk-muneeb-khan-svg-transition;
+    transition: all 500ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_B {
     transform-origin: right top;
-    transition: all 600ms $mk-muneeb-khan-svg-transition;
+    transition: all 600ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_K1 {
     transform-origin: center bottom;
-    transition: all 1700ms $mk-muneeb-khan-svg-transition;
+    transition: all 1700ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_K2 {
     transform-origin: right top;
-    transition: all 1800ms $mk-muneeb-khan-svg-transition;
+    transition: all 1800ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_K3 {
     transform-origin: left top;
-    transition: all 1900ms $mk-muneeb-khan-svg-transition;
+    transition: all 1900ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_H {
     transform-origin: left bottom;
-    transition: all 1000ms $mk-muneeb-khan-svg-transition;
+    transition: all 1000ms $tk-muneeb-khan-svg-transition;
 }
 .mk_svg_A {
     transform-origin: center bottom;
-    transition: all 1100ms $mk-muneeb-khan-svg-transition;
+    transition: all 1100ms $tk-muneeb-khan-svg-transition;
     transform: scale(0.7) translateY(-20%);
 }
 .mk_svg_N2 {
     transform-origin: right bottom;
-    transition: all 1200ms $mk-muneeb-khan-svg-transition;
+    transition: all 1200ms $tk-muneeb-khan-svg-transition;
 }
 
     svg {
@@ -98,11 +98,11 @@ $mk-muneeb-khan-svg-transition: cubic-bezier(0.82, 0.01, 1, 0.11);
 }
 
 
-.mk-muneeb-khan-visible {
+.tk-muneeb-khan-visible {
     // height: 100vw;
     // transform: scale(1);
 
-    .mk-muneeb-khan-parallax {
+    .tk-muneeb-khan-parallax {
         transform: scale(1);
         // transition: all 1s linear;
     }

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import Gooery from '../../components/GooeryAnimation'
 import DecryptText from '../../components/DecryptText'
 import PropTypes from 'prop-types'
@@ -12,31 +12,31 @@ const Outer = ({ data: {
     button
 } }) => {
     return (
-        <div className='mk-outer'>
+        <div className='tk-outer'>
             <div className='container'>
-                <div className='mk-outer-container d-flex justify-content-between align-items-center'>
-                    <div className='mk-outer-text'>
-                        <div className='mk-outer-heading'>
+                <div className='tk-outer-container d-flex justify-content-between align-items-center'>
+                    <div className='tk-outer-text'>
+                        <div className='tk-outer-heading'>
                             {title1}
                         </div>
-                        <div className='mk-outer-heading'>
+                        <div className='tk-outer-heading'>
                             {title2}
                         </div>
-                        <div className='mk-outer-heading2'>
+                        <div className='tk-outer-heading2'>
                             <DecryptText
                                 values={decrypTexts}
                             />
                         </div>
-                        <div className='mk-outer-description'>
+                        <div className='tk-outer-description'>
                             {desciption}
                         </div>
-                        <div className='mk-outer-contact'>
-                            <button onClick={button?.onClick} className='mk-button'>
+                        <div className='tk-outer-contact'>
+                            <button onClick={button?.onClick} className='tk-button'>
                                 {button?.label}
                             </button>
                         </div>
                     </div>
-                    <div className='mk-outer-gooery'>
+                    <div className='tk-outer-gooery'>
                         <Gooery />
                     </div>
                 </div>

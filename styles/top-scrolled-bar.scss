@@ -1,12 +1,12 @@
-@import './theme.scss';
+﻿@import './theme.scss';
 
-.mk-top-scrolled {
+.tk-top-scrolled {
     width: 100vw;
     height: $scrolledBarHeight;
     position: fixed;
     z-index: 5;
 
-    .mk-top-scrolled-highlight {
+    .tk-top-scrolled-highlight {
         height: 100%;
         width: 100%;
         background-color: $themeColor3;

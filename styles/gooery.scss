@@ -1,4 +1,4 @@
-@import './theme.scss';
+﻿@import './theme.scss';
 
 :root {
   --circleDividant: 8;
@@ -10,7 +10,7 @@
 
 $circleDividant: var(--circleDividant);
 
-.mk-gooery {
+.tk-gooery {
   .hooks-main {
     overflow: hidden;
     display: flex;

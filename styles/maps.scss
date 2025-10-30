@@ -1,17 +1,17 @@
-@import './theme.scss';
+﻿@import './theme.scss';
 
-.mk-maps {
+.tk-maps {
     width: 100vw;
     min-height: 100vh;
 
-    .mk-maps-container {
+    .tk-maps-container {
         max-width: 700px;
         width: 100%;
         padding: 100px 0;
         margin: auto;
         flex: 1;
 
-        .mk-box {
+        .tk-box {
             background-color: $themeColor2;
             width: 100%;
             height: auto;
@@ -19,7 +19,7 @@
             margin: 0 0 100px 0;
             border-radius: $defaultBorder;
 
-            .mk-box-heading {
+            .tk-box-heading {
                 // margin-bottom: 12px;
                 font-size: clamp(20px, 6vw, 30px);
                 font-weight: 700;
@@ -28,7 +28,7 @@
                 color: $themeColor3;
             }
 
-            .mk-box-subheading {
+            .tk-box-subheading {
 
                 // margin-bottom: 20px;
                 font-size: clamp(14px, 4vw, 18px);
@@ -39,7 +39,7 @@
             }
 
 
-            .mk-box-para {
+            .tk-box-para {
 
                 // margin-bottom: 20px;
                 font-size: clamp(14px, 6vw, 16px);
@@ -50,14 +50,14 @@
 
             }
 
-            .mk-box-iframe-wrapper {
+            .tk-box-iframe-wrapper {
                 position: relative;
                 padding-bottom: 56.25%;
                 /* 16:9 */
                 height: 0;
                 margin-top: 8%;
 
-                .mk-box-iframe {
+                .tk-box-iframe {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -70,10 +70,11 @@
 
         }
 
-        .mk-gsv-logo {
+        .tk-gsv-logo {
             width: 100%;
         }
 
 
     }
 }
+

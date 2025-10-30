@@ -38,27 +38,42 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Tahir Khan Portfolio</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keywords" />
+        <meta name="description" content="Tahir Khan's portfolio showcasing projects, experience, and skills in JavaScript, React, Node, and Next.js." />
+        <meta name="keywords" content="Tahir Khan, portfolio, JavaScript, TypeScript, React, Next.js, Node.js, Express, MongoDB, PostgreSQL, Web3, PWA, AWS, Docker" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#0d1117" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Tahir Khan Portfolio" />
+        <meta property="og:description" content="Portfolio of Tahir Khan – projects, experience, and contact information." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/assets/profile2.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tahir Khan Portfolio" />
+        <meta name="twitter:description" content="Portfolio of Tahir Khan – projects, experience, and contact information." />
+        <meta name="twitter:image" content="/assets/profile2.jpg" />
 
         <link rel="manifest" href="/manifest.json" />
         <link
-          href="../public/icons/16.png"
+          href="/icons/16.png"
           rel="icon"
           type="image/png"
           sizes="16x16" />
         <link
-          href="../public/icons/32.png"
+          href="/icons/32.png"
           rel="icon"
           type="image/png"
           sizes="32x32" />
-        <link rel="apple-touch-icon" href="../public/icons/16.png"></link>
-        <link rel="apple-touch-icon" href="../public/icons/32.png"></link>
+        <link rel="apple-touch-icon" href="/icons/16.png"></link>
+        <link rel="apple-touch-icon" href="/icons/32.png"></link>
       </Head>
       <Component {...pageProps} />
     </>

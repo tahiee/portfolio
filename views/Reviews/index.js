@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+﻿import React, { useCallback, useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import ViewsTitle from '../../components/ViewsTitle';
 import { Parallax } from 'react-scroll-parallax'
@@ -77,11 +77,11 @@ const Text = ({ text, index, clinet, via }) => {
         >
             <div
                 ref={parallaxRef}
-                className={`mk-review-item-info mk-reviwe-color-${theme}-invert`}>
+                className={`tk-review-item-info tk-reviwe-color-${theme}-invert`}>
                 {clinet} via {via}
             </div>
             <div
-                className={`mk-review-item mk-reviwe-color-${theme}`}>
+                className={`tk-review-item tk-reviwe-color-${theme}`}>
                 {`"${text}"`}
             </div>
         </Parallax>
@@ -93,15 +93,15 @@ const Reviews = ({ data: {
     list
 } }) => {
     return (
-        <div className='mk-reviews'>
+        <div className='tk-reviews'>
             <div className='container'>
-                <div className='mk-reviews-container'>
+                <div className='tk-reviews-container'>
                     <ViewsTitle
                         text={heading}
                     />
                 </div>
             </div>
-            <div className='mk-reviews-list'>
+            <div className='tk-reviews-list'>
                 {(list || []).map((item, i) => (
                     <Text key={i}
                         index={i}

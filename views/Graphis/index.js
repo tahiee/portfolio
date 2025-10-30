@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import PropTypes from 'prop-types'
 import ViewsTitle from '../../components/ViewsTitle'
 
@@ -11,15 +11,15 @@ const SingleImageBox = ({ src, size, imageAlign }) => (
                 backgroundImage: `url(${src})`,
                 backgroundPosition: (imageAlign || 'center')
             }}
-            className='mk-single-image-container'>
+            className='tk-single-image-container'>
 
         </div>
     </HoverColorChanger>
 )
 
 const HoverColorChanger = ({ children, parentClassName, filterClassName }) => (
-    <div className={`mk-hover-color ${parentClassName}`}>
-        <div className={`mk-hover-color-filter ${filterClassName}`} />
+    <div className={`tk-hover-color ${parentClassName}`}>
+        <div className={`tk-hover-color-filter ${filterClassName}`} />
         {children}
     </div>
 )
@@ -39,10 +39,10 @@ const Graphis = ({ data: {
     list
 } }) => {
     return (
-        <div className='mk-graphics'>
+        <div className='tk-graphics'>
             <div className='container'>
-                <div className='mk-graphics-top-background' />
-                <div className='mk-graphics-container'>
+                <div className='tk-graphics-top-background' />
+                <div className='tk-graphics-container'>
                     <ViewsTitle
                         text={heading}
                     />

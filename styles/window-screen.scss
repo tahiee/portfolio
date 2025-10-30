@@ -1,11 +1,11 @@
-@import './theme.scss';
+﻿@import './theme.scss';
 
 
-.mk-window-screen {
+.tk-window-screen {
     border-radius: $defaultBorder;
     overflow: hidden;
 
-    .mk-taskbar {
+    .tk-taskbar {
         // height: 50px;
         display: flex;
         justify-content: center;
@@ -14,35 +14,35 @@
 
         $circleSize: 12px;
 
-        .mk-circles {
+        .tk-circles {
             display: flex;
         }
 
-        .mk-circle {
+        .tk-circle {
             width: $circleSize;
             height: $circleSize;
             margin: 0 5px;
             border-radius: 50%;
         }
 
-        .mk-circle1 {
+        .tk-circle1 {
             background-color: #ef4444;
         }
 
-        .mk-circle2 {
+        .tk-circle2 {
             background-color: #f59e0b;
         }
 
-        .mk-circle3 {
+        .tk-circle3 {
             background-color: #10b981;
         }
 
-        .mk-url {
+        .tk-url {
             flex: 1;
             display: flex;
             justify-content: center;
 
-            .mk-url-box {
+            .tk-url-box {
                 background-color: #00000030;
                 font-size: 14px;
                 padding: 5px;
