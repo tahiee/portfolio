@@ -27,14 +27,18 @@ const mySelf = {
         'Express.js',
         'Node.js',
         'Firestore',
-        'MongoDB'
+        'MongoDB',
+        'PostgreSQL',
     ],
     techList2: [
         'Web3.js',
         'PWA/SPA',
         'AWS',
+        'Docker',
+        'GitHub',
+        'Next.js',
     ],
-    image: '/assets/profile1.jpg',
+    image: '/assets/profile2.jpg',
 }
 
 export default mySelf

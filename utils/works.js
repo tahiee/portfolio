@@ -6,9 +6,15 @@ const works = {
             role: 'Full Stack Developer',
             duration: 'Onsite - Job | Nov 2024 - Present',
             points: [
-                `A Karachi based Company hired my developers crew where we gave the
-    most part of our development from just React till the road of Nodejs,
-    GraphQL, Apollo and many more techs.`,
+                ` Started as a Junior Full Stack Developer and gradually promoted to Mid-level and then Senior Developer based on performance and technical growth.`,
+    `Currently leading a team of developers at Dotclick, managing development cycles, task allocation, and client communication.`,
+    `Specialized in building and maintaining business-focused web applications including SaaS and SRM platforms for clients across multiple industries.`,
+    `Contributed to full-stack development using React, Node.js, Express, and Apollo to deliver scalable and efficient solutions.`,
+    `Worked closely with the design and product teams to convert business requirements into functional and visually appealing interfaces.`,
+    `Enhanced application performance and optimized backend APIs to ensure seamless data flow and improved user experience.`,
+    `Introduced development standards, reusable component structures, and Git workflow improvements to boost productivity.`,
+    `Provided mentorship to junior developers, conducted technical reviews, and ensured adherence to modern best practices.`,
+                
             ],
         },
         {

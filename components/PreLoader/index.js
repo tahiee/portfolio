@@ -35,7 +35,7 @@ const PreLoader = () => {
                 <span></span>
                 <span></span>
             </div>
-            <h1>SUPER FULL STACK</h1>
+            {/* <h1>SUPER FULL STACK</h1> */}
         </div>
     )
 }

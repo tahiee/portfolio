@@ -2,9 +2,9 @@
 
 import React from 'react'
 import GitHub from '../SVGs/GitHub'
-import Instagram from '../SVGs/Instagram'
+// import Instagram from '../SVGs/Instagram'
 import LinkedIn from '../SVGs/LinkedIn'
-import Twitter from '../SVGs/Twitter'
+// import Twitter from '../SVGs/Twitter'
 
 const SideElementsItem = ({ items, position }) => {
     return (
@@ -31,8 +31,8 @@ const SideElements = ({ data: {
                 position="left"
                 items={[
                     <GitHub onClick={() => handleIconClick('github')} key="GitHub" width={20} height={20} />,
-                    <Instagram onClick={() => handleIconClick('instagram')} key="Instagram" width={20} height={20} />,
-                    <Twitter onClick={() => handleIconClick('twitter')} key="Twitter" width={20} height={20} />,
+                    // <Instagram onClick={() => handleIconClick('instagram')} key="Instagram" width={20} height={20} />,
+                    // <Twitter onClick={() => handleIconClick('twitter')} key="Twitter" width={20} height={20} />,
                     <LinkedIn onClick={() => handleIconClick('linkedin')} key="LinkedIn" width={20} height={20} />,
                 ]}
             />
