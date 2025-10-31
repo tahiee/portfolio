@@ -2,20 +2,38 @@
 import PropTypes from 'prop-types'
 import WindowScreen from '../../components/WindowScreen'
 import HoverImage from '../../components/HoverImage'
+import ImageSlider from '../../components/ImageSlider'
 import ViewsTitle from '../../components/ViewsTitle';
 
-const WindowImage = ({ src }) => (
-    <HoverImage
-        showFilter
-        imageClassName='tk-image'
-        src={src}
-    />
-)
+const WindowImage = ({ images }) => {
+    // Support both single image (string) and multiple images (array)
+    const imageArray = Array.isArray(images) ? images : [images]
+    
+    if (imageArray.length > 1) {
+        return (
+            <ImageSlider
+                images={imageArray}
+                showFilter
+                imageClassName='tk-image'
+            />
+        )
+    }
+    
+    return (
+        <HoverImage
+            showFilter
+            imageClassName='tk-image'
+            src={imageArray[0]}
+        />
+    )
+}
 
 const getSide = (index) => index % 2 ? 'left' : 'right'
 
 const SingleProject = (props) => {
-    const { image, index } = props
+    const { image, images, index } = props
+    // Support both 'image' (single) and 'images' (array) props, with 'images' taking precedence
+    const projectImages = images || (image ? [image] : [])
     const side = getSide(index);
     return (
         <div className='tk-projects-single'>
@@ -23,12 +41,12 @@ const SingleProject = (props) => {
                 <div className='col-6 d-none d-lg-block'>
                     <div className=''>
                         <WindowScreen containerClassName={`tk-projects-image-container tk-projects-image-container-${side}`}>
-                            <WindowImage src={image} />
+                            <WindowImage images={projectImages} />
                         </WindowScreen>
                     </div>
                 </div>
                 <div className={`col-12 col-lg-6 d-flex align-items-center ${side === 'right' ? 'order-first' : ''}`}>
-                    <ProjectTextSide {...props} />
+                    <ProjectTextSide {...props} images={projectImages} />
                 </div>
             </div>
         </div>
@@ -36,7 +54,7 @@ const SingleProject = (props) => {
 }
 
 const ProjectTextSide = (props) => {
-    const { label, title, description, techs, index, image } = props
+    const { label, title, description, techs, index, images } = props
     const side = getSide(index);
     return (
         <div
@@ -54,7 +72,7 @@ const ProjectTextSide = (props) => {
                 {description}
                 <div className='mt-4 d-block d-lg-none'>
                     <WindowScreen containerClassName={`tk-text-image-container`}>
-                        <WindowImage src={image} />
+                        <WindowImage images={images} />
                     </WindowScreen>
                 </div>
             </div>

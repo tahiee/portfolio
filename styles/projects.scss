@@ -111,3 +111,22 @@
         }
     }
 }
+
+// Image Slider Styles
+.tk-image-slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    .tk-image-slider-container {
+        display: flex;
+        transition: transform 0.6s ease-in-out;
+        width: 100%;
+    }
+    
+    .tk-image-slider-slide {
+        min-width: 100%;
+        width: 100%;
+        flex-shrink: 0;
+    }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import MK from '../SVGs/MK'
+import TK from '../SVGs/TK'
 import Hamburger from '../SVGs/Hamburger'
 import CurvedText from '../CurvedText';
 import Image from 'next/image';
@@ -65,7 +65,7 @@ const Header = ({ data: { menus, handleItemSelect, handleIconClick, rightBtn, lo
             <div className='tk-header-container'>
                 <div>
                     {!logo?.src ? (
-                        <MK onClick={handleIconClick} width={45} height={45} />
+                        <TK onClick={handleIconClick} width={45} height={45} />
                     ) : (
                         <div onClick={handleIconClick} className='tk-logo-bg'>
                             <Image width={60} height={60} src={'./assets/photo-logo.png'} alt={logo.alt} />

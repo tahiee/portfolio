@@ -2,58 +2,40 @@ const projects = {
     heading: `Things I've Worked on`,
     list: [
         {
-            image: '/assets/projects/PIAIC.png',
-            label: 'Featured Project',
-            title: 'PIAIC Web/Portal',
-            description: 'The mission of PIAIC is to reshape Pakistan by revolutionizing education, research, and business by adopting latest, cutting-edge technologies.',
+            // You can use either 'image' (single) or 'images' (array) - images array will auto-slide
+            images: [
+                '/assets/projects/planflow-Home.png',
+                '/assets/projects/planflow-Dashboard.png',
+                '/assets/projects/planflow-login.png',
+                '/assets/projects/planflow-schedule.png'
+            ],
+            label: 'Dotclick Featured Project',
+            title: 'Planflo Web SaaS Platform',
+            description: 'Planflo is a web-based SaaS platform that helps businesses manage their projects and tasks. It is a comprehensive solution for project management, task management, and collaboration.',
             techs: [
                 'React Js',
+                'Tailwind CSS',
+                'Shadcn UI',
+                'TypeScript',
+                'PostgreSQL',
                 'Express Js',
-                'Mongodb',
             ]
         },
         {
-            image: '/assets/projects/digitalplattform.png',
-            label: 'Featured Project',
-            title: 'Digital Plattform',
-            description: 'A Platform that offers everything from marketing strategy and solving technical challenges to content creation for social media',
+            // Single image (backward compatible - will not slide)
+            image: '/assets/projects/flowlio.png',
+            label: 'Dotclick Featured Project',
+            title: 'CRM SaaS Platform',
+            description: 'Flowlio is a CRM SaaS platform that helps businesses manage their customers and sales. It is a comprehensive solution for customer relationship management, sales management, and marketing automation.',
             techs: [
                 'React Js',
+                'Tailwind CSS',
+                'Shadcn UI',
+                'TypeScript',
+                'PostgreSQL',
                 'Express Js',
-                'GraphQl/Apollo',
-                'Mongodb',
             ]
         },
-        {
-            image: '/assets/projects/declinica.png',
-            label: 'Featured Project',
-            title: 'Declinica',
-            description: 'A Decentralised blockchain Designed for the medical community.',
-            techs: [
-                'React Js',
-                'Web3 Js',
-            ]
-        },
-        {
-            image: '/assets/projects/rolazdoro.png',
-            label: 'Featured Project',
-            title: `Rolaz D'oro`,
-            description: `One of the main objective of Rolaz D'ORO is to make gold easily accessible to even small investors in a trusted and secure environment, with the peace of mind that their investments are traceable and could be claimed at any stated time.`,
-            techs: [
-                'React Js',
-                'Web3 Js',
-            ]
-        },
-        {
-            image: '/assets/projects/chainracers.png',
-            label: 'Featured Project',
-            title: `Chainracers`,
-            description: `ChainRacers is a play-to-earn NFT Race Battle Game. The GammaVerse, our growing MetaVerse featuring characters, worlds, arenas, and more, will kick things off with 8,888 unique generative NFT sets. Each set will include a NFT Racer and NFT Rider.`,
-            techs: [
-                'React Js',
-                'Web3 Js',
-            ]
-        }
     ]
 }
 

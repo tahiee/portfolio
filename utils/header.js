@@ -9,12 +9,12 @@ const header = {
         { title: 'My Work', id: 'my-work' },
         { title: 'Reviews', id: 'reviews' },
         { title: 'Certifications', id: 'certifications' },
-        { title: 'Contribution', id: 'contributions' },
+        // { title: 'Contribution', id: 'contributions' },
         { title: 'Contact', id: 'contact' },
     ],
     rightBtn: {
         label: 'Curriculum Vitae | CV',
-        onClick: () => openLink('assets/cv.pdf')
+        onClick: () => openLink('assets/cv2.pdf')
     },
     logo: {
         src: '/assets/photo-logo.png',

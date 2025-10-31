@@ -1,0 +1,109 @@
+﻿@import './theme.scss';
+
+// $tk-tahir-khan-svg-transition: cubic-bezier(0.84, -0.35, 0.26, 1.08);
+$tk-tahir-khan-svg-transition: cubic-bezier(0.82, 0.01, 1, 0.11);
+// $tk-tahir-khan-svg-transition: cubic-bezier(1,-0.01, 0, 1);
+
+.tk-tahir-khan {
+    // background-color: orange;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // max-height: 800px;
+    // max-width: 800px;
+    display: flex;
+    justify-content: center;
+    // height: 0;
+    transition: all 1000ms linear;
+    // transform: scale(0);
+
+    .tk-tahir-khan-parallax {
+        // display: inline;
+        transform: scale(0);
+        // width: 100vw;
+        // height: 100vw;
+        // max-width: 800px;
+        // max-height: 800px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        // background-color: orange;
+    }
+
+.tk_svg_T {
+    transform-origin: center top;
+    transition: all 100ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_AA {
+    transform-origin: center bottom;
+    transition: all 200ms $tk-tahir-khan-svg-transition;
+    transform: scale(0.02) translateY(-300%);
+}
+.tk_svg_N {
+    transform-origin: center top;
+    transition: all 300ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_E1 {
+    transform-origin: right top;
+    transition: all 400ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_E2 {
+    transform-origin: right top;
+    transition: all 500ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_B {
+    transform-origin: right top;
+    transition: all 600ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_K1 {
+    transform-origin: center bottom;
+    transition: all 1700ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_K2 {
+    transform-origin: right top;
+    transition: all 1800ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_K3 {
+    transform-origin: left top;
+    transition: all 1900ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_H {
+    transform-origin: left bottom;
+    transition: all 1000ms $tk-tahir-khan-svg-transition;
+}
+.tk_svg_A {
+    transform-origin: center bottom;
+    transition: all 1100ms $tk-tahir-khan-svg-transition;
+    transform: scale(0.7) translateY(-20%);
+}
+.tk_svg_N2 {
+    transform-origin: right bottom;
+    transition: all 1200ms $tk-tahir-khan-svg-transition;
+}
+
+    svg {
+        // fill: white;
+        // width: 100vw;
+        // height: 100vw;
+        // max-width: 800px;
+        // max-height: 800px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: auto;
+        // background-color: white;
+    }
+
+}
+
+
+.tk-tahir-khan-visible {
+    // height: 100vw;
+    // transform: scale(1);
+
+    .tk-tahir-khan-parallax {
+        transform: scale(1);
+        // transition: all 1s linear;
+    }
+}
