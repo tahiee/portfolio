@@ -9,7 +9,7 @@ const outer = {
         'I build things for the web',
         'A Gamer',
     ],
-    desciption: `A dedicated and disciplined Full Stack engineer who love to create things for internet, having more than 1.5 years of field experience I've delivered projects to many happy clients over globe.`,
+    desciption: `A dedicated and disciplined Full Stack engineer who love to create things for internet, having more than 2 years of field experience I've delivered projects to many happy clients over globe.`,
     button: {
         label: 'Contact me!',
         onClick: () => openLink('mailto:tahirkhanji007@gmail.com?subject=Hello')
