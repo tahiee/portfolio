@@ -14,7 +14,7 @@ const header = {
     ],
     rightBtn: {
         label: 'Curriculum Vitae | CV',
-        onClick: () => openLink('assets/cv2.pdf')
+        onClick: () => openLink('assets/TahirsResume.pdf')
     },
     logo: {
         src: '/assets/photo-logo.png',

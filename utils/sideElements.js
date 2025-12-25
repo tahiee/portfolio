@@ -5,7 +5,7 @@ const handleIconClick = (icon) => {
         'github': 'https://github.com/tahiee',
         // 'instagram': 'https://www.instagram.com/tahirkhanji007/',
         // 'twitter': 'https://twitter.com/tahirkhanji007',
-        'linkedin': 'https://www.linkedin.com/in/m-tahir-khan-10730a1b4/',
+        'linkedin': 'https://www.linkedin.com/in/tahirkhanniazi/',
     }
     openLink(links[icon])
 }
